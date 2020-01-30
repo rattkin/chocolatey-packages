@@ -26,4 +26,4 @@ Echo Wait for all of those to finish importing...
 TIMEOUT /T 15
 
 echo Calling ketarin now the the repo has been updated
-call "Ketarin.exe" /silent /notify /log=C:\ProgramData\chocolateypackageupdater\ketarin.%mydate%_%mytime%.log
+call "Ketarin.exe" /silent /notify /log=d:\development\ketarinlogs\ketarin.%mydate%_%mytime%.log
