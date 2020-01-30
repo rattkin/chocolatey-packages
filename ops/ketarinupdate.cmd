@@ -19,11 +19,10 @@ popd
 ::import all the files
 FOR /f "tokens=*" %%F IN ('dir %DIR%..\ /b *.ketarin.xml') DO (
 	call ketarin.exe  /import="%DIR%..\%%F"
-	TIMEOUT /T 2
 )
 
 Echo Wait for all of those to finish importing...
-TIMEOUT /T 15
+TIMEOUT /T 2
 
 echo Calling ketarin now the the repo has been updated
 call "Ketarin.exe" /silent /notify /log=d:\development\ketarinlogs\ketarin.%mydate%_%mytime%.log
